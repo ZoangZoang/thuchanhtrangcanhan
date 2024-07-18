@@ -1,0 +1,211 @@
+body {
+  /* Kế thừa các đứa con bên trong */
+  text-align: center;
+}
+
+/* MENU */
+nav{
+  text-align: left;
+}
+
+/* chuyển từ dọc sang ngang */
+ul{
+  /* bỏ dấu chấm tròn list-style: none  */
+  list-style: none;
+  display: flex;
+  background-color: orangered;
+  
+
+}
+
+ul li a{
+  color: white;
+  /* thẻ a mặc định có đường gạch dưới, bỏ đi là dùng thuộc tính bên dưới */
+  text-decoration: none;
+  /* mặc định a là inline, không set padding-top/ padding-bottom/width/height/margin-top/margin-bottom */
+  /* Để xét được cần chuyển lên inline-block */
+  display: inline-block;
+  padding: 12px 16px;
+}
+/* hover lên li nhưng tác động đến a trong nó */
+ul li:hover a{
+background-color: rgb(188, 188, 198);
+color: orangered;
+/* Không đủ chỗ chứa cho con trực tiếp, thì con trực tiếp sẽ xuống dòng */
+flex-wrap: wraps;
+}
+/* gom, các hình ảnh có cùng định dạng */
+img {
+  width: 250px;
+  height: 250px;
+  border: 1px solid grey;
+  /* chống méo hình */
+  object-fit: cover;
+  object-position: center;
+}
+/* .info .avatar {
+  text-align: center;
+} */
+.info .avatar img {
+  /* width: 250px;
+  height: 250px;
+  border: 1px solid grey; */
+  border-radius: 50%;
+  /* chống méo hình */
+  /* object-fit: cover;
+  object-position: center; */
+}
+
+/* h1.name đọc là chọn thẻ h1 có class */
+
+.info h1.name {
+  /* text-align: center; */
+  color: red;
+  /*kích cỡ chữ */
+  font-size: 40px;
+
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    
+
+}
+
+.info .position,
+.info .company {
+  /* text-align: center; */
+  margin-bottom: 30px;
+}
+.info .company .name {
+  color: green;
+}
+
+.info .company .description {
+  color: blue;
+  /* chữ đậm */
+  font-weight: bold;
+}
+
+.info .position .name {
+  color: orange;
+}
+
+.info .position .description {
+  color: purple;
+  /* chữ đậm */
+  font-weight: bold;
+}
+
+/* Family */
+/* .family h2 {
+    text-align: center;
+  } */
+
+.family img {
+  /* width:250px ;
+    height: 250px ; */
+  border-radius: 10px;
+  /* border:  2px solid grey; */
+  /* object-fit: cover ;
+    object-position:center ;  */
+}
+
+.row {
+  /* Chuyển sang sắp xếp theo chiều ngang */
+  display: flex;
+  /* thẻ con trực tiếp của rơ nếu không đủ chổ sẽ xuống dòng: chống thanh cuộn ngang */
+  flex-wrap: wrap;
+
+  /* Gian đều các chiều ngang */
+  justify-content: space-evenly;
+
+  /*Văn bản center  */
+  /* text-align: center; */
+}
+
+figcaption {
+  background-color: red;
+  color: yellow;
+}
+figure {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+}
+/* button có class active */
+button.active {
+  background-color: gray;
+  border: none;
+}
+
+table, th,td{
+  border: 1px solid grey;
+  /* chuyển 2 đường thành 1 đường */
+  /* collapse là thu gọn */
+  border-collapse: collapse;
+}
+
+table{
+  width: 100%;
+}
+thead{
+  color:yellow;
+  background-color: red;
+}
+
+/* Dấu: peseudo class- học sau */
+/* even: chẵn */
+/* Đọc là: dòng chẵn nằm trong tboby thì có định dạng */
+tbody tr:nth-child(even) {
+  background-color: rgb(216, 211, 211);
+}
+
+/* :hover là pesudo class */
+/* hover nghĩa là con trỏ chuột đang rê lên thẻ */
+tbody tr:hover {
+  background-color: rgb(103, 101, 101);
+
+}
+
+/* Thông tin liên hệ */
+.contact{
+  font-size: 18px;
+}
+
+.contact div {
+  margin-bottom: 20px;
+}
+.mobile span{
+  color: blue;
+}
+
+.mobile a{
+  color: red;
+  font-style: italic;
+}
+
+.boss img{
+  float: left;
+  width: unset;
+  margin: 10px;
+}
+
+.boss{
+  text-align: left;
+}
+
+.boss h2{
+  text-align: center;
+}
+/* footer */
+footer {
+  background-color: rgb(255, 192, 232);
+  padding: 20px 16px;
+  /* text-align: center; */
+  margin-top: 100px;
+}

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang cá nhân</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <head>
+        <!-- menu -->
+        <!-- Menu cấp 1 -->
+        <!-- nav>ul>li*4>a -->
+        <nav>
+            <ul>
+                <li><a href="./">Trang chủ</a></li>
+                <li><a href="./gioi-thieu.html">Giới thiệu</a></li>
+                <li><a href="./san-pham.html">Sản phẩm</a></li>
+                <li><a href="./dich-vu.html">Dịch vụ</a></li>
+                <li><a href="index.html">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <!-- Thông tin cá nhân -->
+        <section class="info">
+            <div class="avatar">
+                <img src="images/cho-con.jpg" alt="Avatar" />
+            </div>
+            <!-- h1.name -->
+            <!-- Trong trang web chỉ có thẻ h1(SEO) -->
+            <h1 class="name">Nguyễn Văn Tý</h1>
+
+            <div class="company">
+                <span class="name">Công Ty: </span>
+                <span class="description">Cty TNHH ABC</span>
+            </div>
+
+            <div class="position">
+                <span class="name">Vị trí: </span>
+                <span class="description">Giám đốc bán hàng</span>
+            </div>
+        </section>
+        <!-- Gia đình -->
+        <!-- section.family -->
+        <section class="family">
+            <h2>Family</h2>
+            <!-- figure>img+figcaption -->
+            <div class="row">
+                <figure>
+                    <img src="./images/cat1.jpg" alt="Ba" />
+                    <figcaption>Ba</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/cat2.jpg" alt="Me" />
+                    <figcaption>Me</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/cat3.jpg" alt="Anh" />
+                    <figcaption>Anh</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/cat4.jpg" alt="Chi" />
+                    <figcaption>Chị</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- sở thích -->
+        <!-- section.hobby -->
+        <section class="hobby">
+            <h2>Sở thích</h2>
+
+            <button class="active">Tất cả</button>
+            <button>Đọc Sách</button>
+            <button>Nghe Nhạc</button>
+            <button>Xem phim</button>
+            <button>Đá bóng</button>
+
+            <!-- figure>img+figcaption -->
+            <div class="row">
+                <figure>
+                    <img src="./images/docsach.jpg" alt="Ba" />
+                    <figcaption>Đọc sách</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/nghenhac.jpg" alt="Me" />
+                    <figcaption>Nghe Nhạc</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/dabong.jpg" alt="Anh" />
+                    <figcaption>Đá bóng</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="./images/xemphim.jpg" alt="Chi" />
+                    <figcaption>Xem Phim</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Danh sách nhân viên dưới quyền -->
+        <section class="employee">
+            <h2>Danh sách nhân viên dưới quyền</h2>
+            <!-- table>thead+tbody -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>STT</th>
+                        <th>Mã NV</th>
+                        <th>Tên NV</th>
+                        <th>Giới tính</th>
+                        <th>Lương</th>
+                        <th>Phòng Ban</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>NV001</td>
+                        <td>Tý</td>
+                        <td>Nam</td>
+                        <td>10,000,000đ</td>
+                        <td>HR</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>2</td>
+                        <td>NV002</td>
+                        <td>Sửu</td>
+                        <td>Nữ</td>
+                        <td>11,000,000đ</td>
+                        <td>Account</td>
+                    </tr>
+
+
+
+                    <tr>
+                        <td>3</td>
+                        <td>NV003</td>
+                        <td>Dần</td>
+                        <td>Nam</td>
+                        <td>13,000,000đ</td>
+                        <td>Design</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="contact">
+            <h2>Thông tin liên hệ</h2>
+            <div class="mobile">
+                <span>Mobile</span>
+                <a href="tel:0938698076">0938.698.076</a>
+            </div>
+
+            <div class="email">
+                <span>Email</span>
+                <a href="mailto:tranhuonggiang280197@gmail.com">tranhuonggiang280197@gmail.com</a>
+            </div>
+
+            <div class="zalo">
+                <span>Zalo:</span>
+                <a href="https://zalo.me/0932538468">0938698076</a>
+            </div>
+        </section>
+        <section class="boss">
+            <hr>
+            <h2>BOSS</h2>
+            <img src="./images/boss.jpg" alt="Ông chủ">
+            <!-- lorem200 -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi eos quisquam in nulla, veritatis porro
+            impedit quae. Quibusdam quo ab cupiditate sunt fugiat, voluptas aliquam dolores eos quae expedita possimus,
+            saepe corporis praesentium ipsum? Optio repellendus id aliquid sapiente aliquam reiciendis, perspiciatis
+            fuga
+            numquam ipsa officia aspernatur. Saepe incidunt aspernatur sint quis quibusdam alias distinctio doloribus
+            accusamus dolore soluta id, sed impedit excepturi dicta ullam voluptatem officiis laudantium animi. Dolor
+            tempora, iste reiciendis beatae minus nesciunt nemo? Non consequuntur asperiores magnam quaerat perspiciatis
+            recusandae nesciunt beatae saepe eaque necessitatibus quis ut officia itaque, culpa molestiae corporis
+            temporibus doloribus possimus amet, velit totam reiciendis ullam. Sint minima veritatis tempora quia
+            aspernatur harum ea fugit earum a. Assumenda rem quam aliquam, nesciunt aspernatur ipsam similique quisquam
+            sed rerum, laboriosam, nam magnam possimus. Accusamus laudantium itaque soluta voluptatum explicabo, id,
+            harum obcaecati molestias, voluptate accusantium nisi praesentium laboriosam corporis dolore provident
+            dolorum rem. Incidunt fuga provident exercitationem placeat nostrum? Perspiciatis, eveniet modi quisquam
+            iure, voluptatum consequuntur tempore voluptate, rem nisi exercitationem beatae earum numquam! Voluptates
+            dignissimos, eos error autem dicta provident eius nihil repellat neque optio eum eveniet
+            numquam a minus ipsam culpa, mollitia corporis quasi sint, perferendis quidem? In recusandae dolorum optio?
+        </section>
+    </main>
+    <footer>2023@Thg...</footer>
+</body>
+
+</html>
